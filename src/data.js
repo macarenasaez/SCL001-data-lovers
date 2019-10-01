@@ -14,8 +14,6 @@ function filterData (data,species){
 window.filterData = filterData;
 
 //funcion para ordenar 
-const containerRoot = document.getElementById("root");
-selectionOrder = document.getElementById("name");
 const sortBy = (rickData,seletSort)=>{
   let  orderRick  = rickData;
   if (seletSort === "a-z"){

@@ -47,11 +47,11 @@ const createCards = (results) => {
 
 //ordenar
 
-const rikaOrder = getElementById ("order");
+const rikaOrder = document.getElementById ("order");
 
- rikaOrder.addEventListener("changes",()=>{
+ rikaOrder.addEventListener("change",()=>{
    let sortOrder = rikaOrder.value;
-   selectionOrder =sortrick(rickData,"name",sortOrder);
+  selectionOrder =sort(rickData,"name",sortOrder);
    container.innerHTML=""; 
    selectionOrder.forEach(element=>{
      container.innerHTML+=  `

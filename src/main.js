@@ -53,9 +53,10 @@ selectOrder.addEventListener('change',()=>{
 
   container(results);
 
-//ordenar
 
-const rikaOrder = document.getElementById ("order");
+});
+
+/*const rikaOrder = document.getElementById ("order");
 
  rikaOrder.addEventListener("change",()=>{
    let sortOrder = rikaOrder.value;
@@ -78,9 +79,10 @@ const rikaOrder = document.getElementById ("order");
   </div>
   
   </div>
+  </div>
   </div>`
    })
- });
+ });*/
 
 
 

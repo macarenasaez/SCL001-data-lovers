@@ -45,6 +45,14 @@ const createCards = (results) => {
 
 
 
+//ordenar de la a-z
+const selectOrder= document.getElementById("name");
+selectOrder.addEventListener('change',()=>{
+  const seletSort = selectOrder.value;
+  let results = window.sortBy(rickData,"name",seletSort);
+
+  container(results);
+
 //ordenar
 
 const rikaOrder = document.getElementById ("order");

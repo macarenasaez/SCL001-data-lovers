@@ -46,44 +46,35 @@ const createCards = (results) => {
 
 
 //ordenar de la a-z
-const selectOrder= document.getElementById("name");
-selectOrder.addEventListener('change',()=>{
-  const seletSort = selectOrder.value;
-  let results = window.sortBy(rickData,"name",seletSort);
+/*const selectOrder= document.getElementById("order");
+selectOrder.addEventListener("change",()=>{
 
-  container(results);
+  const seletSort = selectOrder.options[order.seletSort].value;
+  let results = window.sort.sortBy(rickData,seletSort);
 
-
-});
-
-/*const rikaOrder = document.getElementById ("order");
-
- rikaOrder.addEventListener("change",()=>{
-   let sortOrder = rikaOrder.value;
-  selectionOrder =sort(rickData,"name",sortOrder);
-   container.innerHTML=""; 
-   selectionOrder.forEach(element=>{
-     container.innerHTML+=  `
-     <div class="flip-card">
+  document.getElementById("root").innerHTML="";
+  const order=results.forEach((element)=>{
+element.innerHTML =`
+<div class="flip-card">
 <div class="flip-card-inner">
-  <div class="flip-card-front">
-    <img id="img-card" src=${element.img} alt="Imagen">
-    <h4>${element.name}</h4> 
 
-    <div class="flip-card-back">
-  
-    <p>${element.status}</p>
-    <p>${element.species}</p>
-    <p>${element.type}</p>
-    <p>${element.gender}<p>
+ <div class="flip-card-front">
+   <img id="img-card" src=${element.image} alt="Imagen">
+   <h4>${element.name}</h4> 
   </div>
-  
-  </div>
-  </div>
-  </div>`
-   })
- });*/
 
+  <div class="flip-card-back">
 
+  <p>${element.status}</p>
+  <p>${element.species}</p>
+  <p>${element.type}</p>
+  <p>${element.gender}<p>
+</div>
+
+</div>
+</div>`
+  })
+return order;
+});*/
 
    

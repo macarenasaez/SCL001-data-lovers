@@ -14,18 +14,22 @@ function filterData (data,species){
 window.filterData = filterData;
 
 //funcion para ordenar 
-const sortBy = (rickData,seletSort)=>{
-  let  orderRick  = rickData;
-  if (seletSort === "a-z"){
-    orderRick = data.sort((a,b)=> a.name.localeCompare(b.name));
+/*window.sortBy = {
+ sortBy = (rickData,seletSort)=>{
+
+  if (seletSort === "az"){
+    const orderRick =rickData.sort((a,b)=>{
+      return a.name.localeCompare(b.name);
+    })
+    return orderRick;
   }
-  if (seletSort === "z-a"){
-    orderRick = data.sort((a, b) => a.name.localeCompare(b.name)).reverse();
+  else {
+const orderRickZ=rickData.sort((a,b)=>{
+  return b.name.localeCompare(a.name);
+})
+return orderRickZ
   }
-  return (orderRick);
 }
 
-sortBy();
-window.sortBy = sortBy;
-
+} */
 
